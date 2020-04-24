@@ -1,17 +1,17 @@
 Hello world!!
 
-This project is based on [youtube-dl](www.ss.com) and [spotdl](www.git.com).
+This project is based on [youtube-dl](https://github.com/ytdl-org/youtube-dl) and [spotdl](https://github.com/ritiek/spotify-downloader).
 
-Requirements: [Termux](www.gp.com)
+Requirements: [Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN)
 
 # INSTALLATION:
 
 Allow storage permission for termux:
-Open termux and type the bellow command and click 'allow' when prompted
+Open termux and type the bellow command and click `allow` when prompted
     
     $ termux-setup-storage
 
-Now install required packages by entering the bellow commands one by one and enter 'y' when asked.
+Now install required packages by entering the bellow commands one by one and enter `y` when asked.
 
     $ apt update && apt upgrade
     $ apt install git
