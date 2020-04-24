@@ -31,7 +31,7 @@ To download a song,video or a playlist from youtube or youtube music, share its 
 
 To download songs,playlist,album from spotify, you will have to copy the link to Google Chrome and then share the link to termux from Chrome.
 
-#LOCATION:
+# LOCATION:
 
 Files downloaded from Youtube will be present in Internal storage/termux/youtube
 
