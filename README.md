@@ -4,7 +4,7 @@ This project is based on [youtube-dl](www.ss.com) and [spotdl](www.git.com).
 
 Requirements: [Termux](www.gp.com)
 
-Setting up:
+#INSTALLATION:
 
 Allow storage permission for termux:
 Open termux and type the bellow command and click 'allow' when prompted
@@ -25,13 +25,13 @@ Now move the configuration files by typing the bellow command one by one
     $ chmod u+x install992.sh
     $ ./install992.sh
 
-Usage:
+#USAGE:
 
 To download a song,video or a playlist from youtube or youtube music, share its link from youtube or youtube music to termux.
 
-To download songs,playlist,album from spotify,u will have to copy the link to Google Chrome and then share the link to termux from Chrome.
+To download songs,playlist,album from spotify, you will have to copy the link to Google Chrome and then share the link to termux from Chrome.
 
-Location:
+#LOCATION:
 
 Files downloaded from Youtube will be present in Internal storage/termux/youtube
 
