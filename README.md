@@ -8,6 +8,7 @@ Setting up:
 
 Allow storage permission for termux:
 Open termux and type the bellow command and click 'allow' when prompted
+    
     $ termux-setup-storage
 
 Now install required packages by entering the bellow commands one by one and enter 'y' when asked.
