@@ -1,0 +1,53 @@
+#rjn991
+url=$1
+echo "What should I do with $url?"
+echo "1) Download song from youtube"
+echo "2) Download 360p video from youtube"
+echo "3) Download 480p video from youtube"
+echo "4) Download 720p video from youtube"
+echo "5) Download 1080p video from youtube"
+echo "6) Download song from spotify"
+echo "7) Download playlist from spotify"
+echo "8) Download album from spotify"
+echo "9) Download song from youtube music"
+
+read CHOICE
+case $CHOICE in
+     	 1)
+      	  		youtube-dl --embed-thumbnail -x --audio-format mp3 $url
+		        ;;
+	 2)
+		        youtube-dl -f "best[height<=360]" $url
+		        ;;
+	 3)	
+		        youtube-dl -f "best[height<=480]" $url
+		        ;;
+	 4)     	
+		        youtube-dl -f "best[height<=720]" $url
+		        ;;
+	 5)      
+		        youtube-dl -f "best[height<=1080]" $url
+		        ;;
+     	 6)
+    		 	spotdl -s $url
+		        ;;
+	 7)
+    	    		spotdl -p $url
+    		    	spotdl -l playlist.txt
+		        rm playlist.txt
+    		    	;;
+      	 8)
+            		spotdl -a $url
+            		spotdl -l album.txt
+            		rm album.txt
+           		;;
+	 9)
+         		youtube-dl --ignore-config --no-mtime -o '/data/data/com.termux/files/home/storage/shared/Termux/Youtube/%(track)s - %(artist)s.%(ext)s' --add-metadata -x --audio-format mp3 $url
+            		;;			
+esac
+
+      `       
+              
+
+
+
