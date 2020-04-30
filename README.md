@@ -15,7 +15,7 @@ Now install required packages by entering the bellow commands one by one and ent
 
     $ apt update && apt upgrade
     $ apt install git
-    $ git clone https://github.com/rjn991
+    $ git clone https://github.com/rjn991/ydlsdl.git
     $ cd ydlsdl
     $ chmod u+x install991.sh
     $ ./install991.sh
