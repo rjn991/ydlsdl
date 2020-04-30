@@ -12,7 +12,7 @@ mkdir -p ~/storage/shared/termux/music
 
 echo "Copying files"
 #youtube-dl
-cp ~/ydlsdl/youtubedl/config/config ~/.config/youtube-dl
+cp ~/ydlsdl/ydl/config/config ~/.config/youtube-dl
 #spotdl
 rm -rf ~/.config/spotdl/config
 cp ~/ydlsdl/spotdl/config/config.yml ~/.config/spotdl
