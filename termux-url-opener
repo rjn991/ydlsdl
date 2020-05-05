@@ -14,7 +14,7 @@ echo "9) Download song from youtube music"
 read CHOICE
 case $CHOICE in
      	 1)
-      	  		youtube-dl --embed-thumbnail -x --audio-format mp3 $url
+      	  		youtube-dl --embed-thumbnail --add-metadata -x --audio-format mp3 $url
 		        ;;
 	 2)
 		        youtube-dl -f "best[height<=360]" $url
@@ -37,16 +37,16 @@ case $CHOICE in
 		        rm playlist.txt
     		    	;;
       	 8)
-            		spotdl -a $url
+            		spotdl -b $url
             		spotdl -l album.txt
             		rm album.txt
            		;;
 	 9)
-         		youtube-dl --ignore-config --no-mtime -o '/data/data/com.termux/files/home/storage/shared/Termux/Youtube/%(track)s - %(artist)s.%(ext)s' --add-metadata -x --audio-format mp3 $url
+         		youtube-dl --ignore-config --no-mtime -o '/data/data/com.termux/files/home/storage/shared/termux/music/%(track)s - %(artist)s.%(ext)s' --embed-thumbnail --add-metadata -x --audio-format mp3 $url
             		;;			
 esac
 
-      `       
+ 
               
 
 
