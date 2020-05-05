@@ -162,7 +162,7 @@ def write_playlist(playlist_url, text_file=None):
     playlist = fetch_playlist(playlist_url)
     tracks = playlist["tracks"]
     if not text_file:
-        text_file = u"{0}.txt".format(slugify(playlist["name"], ok="-_()[]{}"))
+        text_file = u"playlist.txt".format(slugify(playlist["name"], ok="-_()[]{}"))
     return write_tracks(tracks, text_file)
 
 
@@ -230,7 +230,7 @@ def write_album(album_url, text_file=None):
     album = fetch_album(album_url)
     tracks = spotify.album_tracks(album["id"])
     if not text_file:
-        text_file = u"{0}.txt".format(slugify(album["name"], ok="-_()[]{}"))
+        text_file = u"album.txt".format(slugify(album["name"], ok="-_()[]{}"))
     return write_tracks(tracks, text_file)
 
 
