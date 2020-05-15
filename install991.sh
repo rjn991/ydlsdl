@@ -1,6 +1,6 @@
 #by rjn991
-echo "Updating packages"
-apt update && apt upgrade
+
+
 
 echo "Downloading python"
 apt install python
