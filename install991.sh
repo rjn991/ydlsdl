@@ -9,7 +9,7 @@ echo "updating pip3"
 pip install --upgrade pip
 
 echo "Downloading spotdl"
-pip3 install spotdl
+pip3 install spotdl==1.2.6
 
 echo "Downloading ffmpeg"
 apt install ffmpeg
