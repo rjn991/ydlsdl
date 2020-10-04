@@ -32,12 +32,12 @@ case $CHOICE in
     		 	spotdl -s $url
 		        ;;
 	 7)
-    	    		spotdl -p $url
-    		    	spotdl -l playlist.txt
+    	    		spotdl -p $url --write-to=playlist.txt
+     		    	spotdl -l playlist.txt
 		        rm playlist.txt
     		    	;;
       	 8)
-            		spotdl -b $url
+            		spotdl -a $url --write-to=album.txt
             		spotdl -l album.txt
             		rm album.txt
            		;;
