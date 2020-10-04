@@ -30,4 +30,5 @@ chmod u+x ~/bin/termux-url-opener
 dos2unix ~/bin/termux-url-opener
 
 chmod u+x ~/bin/termux-file-editor
-dos2unix ~/bin/
+dos2unix ~/bin/termux-file-editor
+
