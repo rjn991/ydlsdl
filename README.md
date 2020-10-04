@@ -27,9 +27,7 @@ Now move the configuration files by typing the bellow command one by one
 
 # USAGE:
 
-To download a song, video or a playlist from youtube or youtube music, share its link from youtube or youtube music to termux.
-
-To download songs, playlist, album from spotify, you will have to copy the link to Google Chrome and then share the link to termux from Chrome.
+To download a song, video, album or a playlist from youtube, youtube music or spotify share its link from youtube,youtube music or spotify to termux.
 
 # LOCATION:
 
