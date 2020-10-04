@@ -1,0 +1,6 @@
+file_path=$1
+
+# Fetching link from file
+link=$( grep -oP 'http.?://\S+' $file_path )
+
+bash ~/bin/termux-url-opener $link
