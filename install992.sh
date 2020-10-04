@@ -18,6 +18,8 @@ rm -rf ~/.config/spotdl/config.yml
 cp ydlsdl/spotdl/config/config.yml ~/.config/spotdl
 #termux-url-opener
 cp ydlsdl/termux-url-opener ~/bin
+#termux-file-editor
+cp ydlsdl/termux-file-editor ~/bin
 
 echo "Making files executable"
 
@@ -27,3 +29,5 @@ dos2unix ~/.config/youtube-dl/config
 chmod u+x ~/bin/termux-url-opener
 dos2unix ~/bin/termux-url-opener
 
+chmod u+x ~/bin/termux-file-editor
+dos2unix ~/bin/
