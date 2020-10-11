@@ -1,0 +1,55 @@
+#rjn991
+url=$1
+echo "What should I do with $url?"
+echo "1) Download song from youtube"
+echo "2) Download 360p video from youtube"
+echo "3) Download 480p video from youtube"
+echo "4) Download 720p video from youtube"
+echo "5) Download 1080p video from youtube"
+echo "6) Download song from spotify"
+echo "7) Download playlist from spotify"
+echo "8) Download album from spotify"
+echo "9) Download song from youtube music"
+
+read CHOICE
+case $CHOICE in
+     	 1)
+      	  		youtube-dl --write-thumbnail -x --audio-format mp3 $url
+		        ;;
+	 2)
+		        youtube-dl -f 'bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]/best[height<=360]' --merge-output-format mp4 $url
+		        ;;
+	 3)	
+		        youtube-dl -f 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]' --merge-output-format mp4 $url
+		        ;;
+	 4)     	
+		        youtube-dl -f 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[height<=720]' --merge-output-format mp4 $url
+		        ;;
+	 5)      
+		        youtube-dl -f 'bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080]' --merge-output-format mp4 $url
+		        ;;
+     	 6)
+    		 	spotdl -s $url
+		        ;;
+	 7)
+    	    		spotdl -p $url --write-to=playlist.txt
+     		    	spotdl -l playlist.txt
+		        rm playlist.txt
+    		    	;;
+      	 8)
+            		spotdl -a $url --write-to=album.txt
+            		spotdl -l album.txt
+            		rm album.txt
+           		;;
+	 9)
+         		youtube-dl --ignore-config --no-mtime -o '/data/data/com.termux/files/home/storage/shared/termux/music/%(track)s - %(artist)s.%(ext)s' --embed-thumbnail --add-metadata -x --audio-format mp3 $url
+            		;;			
+esac
+
+ 
+              
+
+
+
+sleep 200
+
