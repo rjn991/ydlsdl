@@ -14,7 +14,7 @@ echo "9) Download song from youtube music"
 read CHOICE
 case $CHOICE in
      	 1)
-      	  		youtube-dl --write-thumbnail -x --audio-format mp3 $url
+      	  		youtube-dl --embed-thumbnail -x --audio-format mp3 $url
 		        ;;
 	 2)
 		        youtube-dl -f 'bestvideo[height<=360][ext=mp4]+bestaudio[ext=m4a]/best[height<=360]' --merge-output-format mp4 $url
